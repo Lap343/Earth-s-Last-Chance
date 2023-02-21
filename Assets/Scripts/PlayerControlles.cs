@@ -13,6 +13,7 @@ public class PlayerControlles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float horizontalThrow = Input.GetAxis("Horizontal");
+        float verticalThrow = Input.GetAxis("Vertical");
     }
 }
