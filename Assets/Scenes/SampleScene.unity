@@ -176,11 +176,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &686544630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 909896894237664339, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
-  m_PrefabInstance: {fileID: 1718548046}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,18 +616,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 570632013832535785, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.32504553
-      objectReference: {fileID: 0}
-    - target: {fileID: 570632013832535785, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.32504553
-      objectReference: {fileID: 0}
-    - target: {fileID: 570632013832535785, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.32504553
-      objectReference: {fileID: 0}
-    - target: {fileID: 570632013832535785, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -683,65 +666,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 570632013832535785, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
   m_PrefabInstance: {fileID: 1718548046}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2132188921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686544630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bfca01ddd4e0e54aa7081d2dbb214de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement:
-    m_Name: Movement
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: f41dcd1b-1526-4cba-ab9b-97b25d556f38
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 2D Vector
-      m_Id: c9c3b5e4-5176-4fe5-b061-a2013e929346
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 4
-    - m_Name: up
-      m_Id: 92b06f2f-35d2-4956-9607-451c198a4206
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 8
-    - m_Name: down
-      m_Id: a068f0f5-031d-42a5-b1ed-c97333a09c84
-      m_Path: <Keyboard>/s
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 8
-    - m_Name: left
-      m_Id: 4de00343-bad8-414c-b95d-f45d2527ca4e
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 8
-    - m_Name: right
-      m_Id: 9a2efee8-e7a5-45c9-912c-10eeecfe6a16
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 8
-    m_Flags: 0
-  movementSpeed: 1
