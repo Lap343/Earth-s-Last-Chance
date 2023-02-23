@@ -5,9 +5,17 @@ using UnityEngine.InputSystem;
 
 public class PlayerControlles : MonoBehaviour
 {
+    float xThrow;
+    float yThrow;
+
     [SerializeField] float movementSpeed = 0.1f;
     [SerializeField] float xRange = 5f;
     [SerializeField] float yRange = 5f;
+
+    [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float controlPitchFactor = -10f;
+    [SerializeField] float positionYawFactor = 2f;
+    [SerializeField] float controlRollFactor = -20f;
 
     // Update is called once per frame
     void Update()
@@ -18,8 +26,8 @@ public class PlayerControlles : MonoBehaviour
 
     void ProcessTranslation()
     {
-        float xThrow = Input.GetAxis("Horizontal");
-        float yThrow = Input.GetAxis("Vertical");
+        xThrow = Input.GetAxis("Horizontal");
+        yThrow = Input.GetAxis("Vertical");
 
         float xOffset = xThrow * Time.deltaTime * movementSpeed;
         float rawXPos = transform.localPosition.x + xOffset;
@@ -38,6 +46,13 @@ public class PlayerControlles : MonoBehaviour
 
     void ProcessRotation()
     {
-        transform.localRotation = Quaternion.Euler(-30f, 30f, 0f);
+        float pitchDueToPosition = transform.localPosition.y + positionPitchFactor;
+        float pitchDueToControlThrow = yThrow * controlPitchFactor;
+
+        float pitch = pitchDueToPosition * pitchDueToControlThrow;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xThrow * controlRollFactor;
+
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 }
