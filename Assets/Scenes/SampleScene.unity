@@ -611,10 +611,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1610530133}
     m_Modifications:
-    - target: {fileID: 2132188921, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
-      propertyPath: controlPitchFactor
-      value: -6
-      objectReference: {fileID: 0}
     - target: {fileID: 570632013832535785, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
       propertyPath: m_RootOrder
       value: 0
