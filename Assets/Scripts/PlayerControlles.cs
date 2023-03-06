@@ -9,14 +9,25 @@ public class PlayerControlles : MonoBehaviour
     float xThrow;
     float yThrow;
 
-    [SerializeField] float movementSpeed = 0.1f;
+    [Header("General Setup Settings")]
+    [Tooltip("How fast ship moves up and down based on player input")] [SerializeField] float movementSpeed = 0.1f;
+    [Tooltip("How far the ship can move left or right on the screen")] 
     [SerializeField] float xRange = 5f;
+    [Tooltip("How far the ship can move up and down on the screen")] 
     [SerializeField] float yRange = 5f;
+
+    [Header("Laser Gun Array")]
+    [Tooltip("An array of Laser GameObjects")] 
     [SerializeField] GameObject[] lasers;
 
+    [Header("Pitch, Yaw and Roll Setup Settings")]
+    [Tooltip("Up and down turning of the plane's nose")] 
     [SerializeField] float positionPitchFactor = -2f;
+    [Tooltip("")] 
     [SerializeField] float controlPitchFactor = -10f;
+    [Tooltip("Left and right turning of the plane")] 
     [SerializeField] float positionYawFactor = 2f;
+    [Tooltip("Clockwise and counter-clockwise turning of the plane")] 
     [SerializeField] float controlRollFactor = -20f;
 
     // Update is called once per frame
