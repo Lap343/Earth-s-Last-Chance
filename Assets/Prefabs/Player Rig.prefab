@@ -145,6 +145,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1235515236539041133}
     m_Modifications:
+    - target: {fileID: 2132188921, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132188921, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 2893808707719829573}
+    - target: {fileID: 2132188921, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8975276829706094242}
     - target: {fileID: 570632013832535785, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -193,10 +205,72 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 4561557153105470532, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561557153105470532, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: lengthInSec
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561557153105470532, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561557153105470532, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561557153105470532, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561557153105470532, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776486311296367267, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776486311296367267, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: lengthInSec
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776486311296367267, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776486311296367267, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776486311296367267, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776486311296367267, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7902682885294082260, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
 --- !u!4 &1643290792474341535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 570632013832535785, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+  m_PrefabInstance: {fileID: 1235515237502701174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2893808707719829573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4111136923202672179, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+  m_PrefabInstance: {fileID: 1235515237502701174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8975276829706094242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7902682885294082260, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
   m_PrefabInstance: {fileID: 1235515237502701174}
   m_PrefabAsset: {fileID: 0}
