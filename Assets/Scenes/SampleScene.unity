@@ -575,10 +575,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1409698547, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1235515236539041132, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
       propertyPath: m_Name
       value: Player Rig
@@ -626,6 +622,10 @@ PrefabInstance:
     - target: {fileID: 1235515236539041133, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344070744950712882, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
+      propertyPath: TrailModule.lifetime.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
