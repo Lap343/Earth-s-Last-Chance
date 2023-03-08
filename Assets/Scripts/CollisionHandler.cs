@@ -8,4 +8,8 @@ public class CollisionHandler : MonoBehaviour
     {
         Debug.Log(this.name + " bumped into " + other.gameObject.name);
     }
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(this.name + " bumped into " + other.gameObject.name);
+    }
 }
