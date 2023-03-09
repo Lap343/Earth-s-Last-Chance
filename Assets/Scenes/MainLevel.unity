@@ -686,14 +686,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1409698545, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
-      propertyPath: leftLaser
-      value: 
-      objectReference: {fileID: 1235515235851352122}
-    - target: {fileID: 1409698545, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
-      propertyPath: rightLaser
-      value: 
-      objectReference: {fileID: 1235515235851352121}
     - target: {fileID: 1235515236539041132, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
       propertyPath: m_Name
       value: Player Rig
@@ -744,13 +736,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
---- !u!198 &1235515235851352121 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3344070744950712882, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
-  m_PrefabInstance: {fileID: 1235515235851352120}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1235515235851352122 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8849238564277302485, guid: 6da5b8254c8de1d4582c8622675de7ca, type: 3}
-  m_PrefabInstance: {fileID: 1235515235851352120}
-  m_PrefabAsset: {fileID: 0}
