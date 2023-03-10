@@ -9,6 +9,8 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] ParticleSystem leftLaser;
     [SerializeField] ParticleSystem rightLaser;
 
+    [SerializeField] ParticleSystem crashParticles;
+
     bool isTransitioning = false;
 
     void OnTriggerEnter(Collider other)
@@ -22,8 +24,11 @@ public class CollisionHandler : MonoBehaviour
     {
         isTransitioning = true;
         GetComponent<PlayerControlles>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
         leftLaser.Stop();
         rightLaser.Stop();
+        crashParticles.Play();
+        GetComponent<MeshRenderer>().enabled = false;
         Invoke("ReloadLevel", loadLevelDelay);
     }
 
