@@ -12,7 +12,7 @@ public class ScoreBoard : MonoBehaviour
     void Start()
     {
         scoreText = GetComponent<TMP_Text>();
-        scoreText.text = $"Score: {score.ToString()}";
+        scoreText.text = "Score: 0";
     }
 
     public void IncreaseScore(int amountToIncrease)
