@@ -392,6 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 1044339681721053057, guid: 04dc2bc488b8e42428e137a9554a0aaa, type: 3}
   parent: {fileID: 1975807889}
+  health: 1
 --- !u!1 &1315096118
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 1044339681721053057, guid: 04dc2bc488b8e42428e137a9554a0aaa, type: 3}
   parent: {fileID: 1975807889}
+  health: 4
 --- !u!136 &1315096120
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -460,7 +462,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a631fe4a1f878b84e8d34b619edb6a24, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
